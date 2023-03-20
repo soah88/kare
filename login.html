@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>KARE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <a href="#" class="btn_top">top</a>
+    <!-- ? top button -->
+
+    <div id="searchPopup">
+        <div>
+            <form>
+                <span>
+                    <input type="search" id="searchField" placeholder="Search..." title="insert to ur search Keywords">
+                    <input type="submit" value="search">
+                </span>
+            </form>
+            <input type="button" value="close" class="closeBtn">
+        </div>
+    </div>
+    <!-- ? search Area -->
+
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo_header.png" alt="KARE">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="search" data-popup="searchPopup">
+                </li>
+                <li>
+                    <a href="login.html">my page</a>
+                </li>
+                <li>
+                    <a href="login.html">cart</a>
+                </li>
+                <li>
+                    <a href="login.html">wish</a>
+                </li>
+                <li>
+                    <input type="button" value="gnbToggle" data-panel="gnbPanel">
+                </li>
+            </ul>
+        </div>
+
+        <nav id="gnbPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li>
+                    <a href="login.html">About us</a>
+                </li>
+                <li>
+                    <b>Furniture</b>
+                    <ol>
+                        <li><a href="login.html">Sofa</a></li>
+                        <li><a href="login.html">Armchair</a></li>
+                        <li><a href="login.html">Chest</a></li>
+                        <li><a href="login.html">Table</a></li>
+                        <li><a href="login.html">Chair</a></li>
+                        <li><a href="login.html">Mirror</a></li>
+                        <li><a href="login.html">Cabinet</a></li>
+                        <li><a href="login.html">Shelf</a></li>
+                        <li><a href="login.html">Living storage</a></li>
+                        <li><a href="login.html">Stool</a></li>
+                        <li><a href="login.html">Lamp</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <b>ACC</b>
+                    <ol>
+                        <li><a href="login.html">Painting</a></li>
+                        <li><a href="login.html">Figures &amp; object</a></li>
+                        <li><a href="login.html">Deco plate</a></li>
+                        <li><a href="login.html">Artificial plant</a></li>
+                        <li><a href="login.html">Watch</a></li>
+                        <li><a href="login.html">Candlestick &amp; Candle</a></li>
+                        <li><a href="login.html">Lantern &amp; Tea light</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="login.html">Inspiration</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- ? FNB -->
+    </header>
+    <!-- ? header -->
+
+    <div id="pwFindPopup">
+        <input type="button" value="close" class="closeBtn">
+        <h3>Forgot your Password</h3>
+        <p>Provide your account email address to receive an email to reset your password.</p>
+        <label for="pwFindEmailField">Email Address</label>
+        <form action="login.html">
+            <input type="email" id="pwFindEmailField" placeholder="Email Address" required>
+            <input type="submit" value="Send Email" class="closeBtn">
+        </form>
+    </div>
+
+    <section class="loginContainer">
+        <h2>log in</h2>
+        <ul class="tabMenu">
+            <li data-tabNumb="tab1" class="active">Sign In</li>
+            <li data-tabNumb="tab2">Create Account</li>
+        </ul>
+        
+        <div id="tab1" class="tabPage active"> 
+            <form action="index_after.html">
+                <div>
+                    <input type="email" id="loginEmailField" placeholder="Email Address" title="Email Address" required>
+                    <input type="password" id="loginpwField" placeholder="* Password" title="Password" required>
+                </div>
+                <input type="submit" value="Sign In">
+            </form>
+            <input type="checkbox" id="loginSaveCheck">
+            <label for="loginSaveCheck">Remember Me</label>
+            <input type="button" value="Forgot Password?" data-popup="pwFindPopup">
+        </div>
+
+        <div id="tab2" class="tabPage">
+            <form action="joinResult.html">
+                <div>
+                    <label for="joinFirstNameField">First Name</label>
+                    <input type="text" id="joinFirstNameField" placeholder="First Name" required>
+                    <label for="joinLastNameField">Last Name</label>
+                    <input type="text" id="joinLastNameField" placeholder="Last Name" required>
+                    <label for="joinEmailField">Email Address</label>
+                    <input type="email" id="joinEmailField" placeholder="Email Address" required>
+                    <label for="joinEmailCheckField">Confirm Email Address</label>
+                    <input type="email" id="joinEmailCheckField" placeholder="Confirm Email Address" required>
+                    <label for="joinPwField">Password</label>
+                    <input type="password" id="joinPwField" placeholder="Password (8 - 255 characters)" required>
+                    <label for="joinPwCheckField">Confirm Password</label>
+                    <input type="password" id="joinPwCheckField" placeholder="Confirm Password" required>
+                </div>
+                <input type="checkbox" id="joinTermsCheck">
+                <label for="joinTermsCheck">I'd like to hear from KARE</label>
+                <p>By checking this box, you consent to receive emails about KARE's latest collections, exclusive offers, and special events. You may revoke your consent at any time by clicking unsubscribe at the bottom of any email from us. By choosing 'Apply' below you accept the terms of our</p>
+                <a href="privacyPolicy.html">Privacy Policy</a>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        
+        <div>
+            <h3>Non-Member Order Status</h3>
+            <p>
+                Even if you are not a registered user, you can check your order status.<br>
+                Enter your order number and email address below.
+            </p>
+            <form action="index_after.html">
+                <div>
+                    <input type="text" id="nonMemOrderNumbField" placeholder="Order Number" title="Order Number" required>
+                    <input type="email" id="nonMemEmailField" placeholder="Email Address" title="Email Address" required>
+                </div>
+                <input type="submit" value="Check Status">
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div>
+            <h2>
+                <span>KARE</span>
+                Copyright ⓒ kare-korea.com<br>All right reserved.
+            </h2>
+
+            <div>
+                <a href="information.html">Information use</a>
+                <a href="termsOfService.html">Terms of service</a>
+                <a href="privacyPolicy.html">Privacy policy</a>
+                <span><a href="tel:+827041229874">070-4122-9874</a> / Weekdays am 10:00 ~ pm 7:00 / Saturday am 10:00 ~ pm 6:00 / Lunch time pm 12:00 ~ pm 1:00 / Please inquire on the bulletin board on Saturdays and holidays.</span>
+            </div>
+
+            <span>
+                <a href="https://www.instagram.com/kare_design">instagram</a>
+                <a href="https://www.youtube.com/channel/UCByQXn1GnCleEVUwR7EBBBg">youtube</a>
+            </span>
+        </div>
+    </footer>
+    <!-- ? footer -->
+</body>
+</html>

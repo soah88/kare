@@ -1,0 +1,254 @@
+
+ .mainContainer ul.headCopySlider li div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mainContainer ul.headCopySlider li div h3{
+    font-size: 78px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.mainContainer ul.headCopySlider li div p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.8);
+}
+.mainContainer div.headCopyPager, 
+.mainContainer div.headCopyAutoControl
+.mainContainer div.bestPrdPager,
+.mainContainer div.bestPrdAutoControl,
+.mainContainer div.newPrdPager,
+.mainContainer div.newPrdAutoControl{
+    position: absolute;
+}
+/* headCopy slider */
+
+.mainContainer ul.bestPrdSlider li div,
+.mainContainer ul.newPrdSlider li div{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.mainContainer ul.bestPrdSlider li div h3,
+.mainContainer ul.newPrdSlider li div h3{
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 25px;
+}
+.mainContainer ul.bestPrdSlider li div small,
+.mainContainer ul.newPrdSlider li div small{
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.5;
+    line-height: 18px;
+    margin-bottom: 25px;
+    display: block;
+}
+.mainContainer ul.bestPrdSlider li div p,
+.mainContainer ul.newPrdSlider li div p{
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.5;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+.mainContainer ul.bestPrdSlider li div a,
+.mainContainer ul.newPrdSlider li div a{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    width: 130px;
+    line-height: 130px;
+    border-radius: 65px;
+    margin: 0 auto;   
+    transition: all 0.3s;
+}
+.mainContainer ul.bestPrdSlider li div a:hover,
+.mainContainer ul.newPrdSlider li div a:hover{
+    background-color: #fff;
+}
+
+.mainContainer ul.bestPrdSlider li div{
+    left: 65%;
+}   
+.mainContainer ul.bestPrdSlider li div h3{
+    color: #f8ecd1;
+}       
+.mainContainer ul.bestPrdSlider li div p{
+    color: #f8ecd1;
+}   
+.mainContainer ul.bestPrdSlider li div a{
+    color: #85586f;
+    background-color: #f8ecd1;
+}
+/* best product slider  */
+
+.mainContainer ul.newPrdSlider li div{
+    right: 65%;
+}   
+.mainContainer ul.newPrdSlider li div h3{
+    color: #fad6a5;
+}       
+.mainContainer ul.newPrdSlider li div p{
+    color: #fad6a5;
+}   
+.mainContainer ul.newPrdSlider li div a{
+    color: #61764b;
+    background-color: #fad6a5;
+}
+/* new product slider */
+
+.mainContainer .newPrdAutoControl+div{
+    text-align: center;
+    padding: 130px 0 210px;
+}
+.mainContainer .newPrdAutoControl+div h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: #666;
+}
+.mainContainer .newPrdAutoControl+div p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+    text-transform: uppercase;
+    margin: 30px 0 65px;
+}
+.mainContainer .newPrdAutoControl+div ul{
+    padding: 0 3%;
+    box-sizing: border-box;
+}
+.mainContainer .newPrdAutoControl+div ul li{
+    float: left;
+    width: 32%;
+    position: relative;
+}
+.mainContainer .newPrdAutoControl+div ul li:not(:first-child){
+    margin-left: 2%;
+}
+.mainContainer .newPrdAutoControl+div ul li div{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 35%;
+    box-sizing: border-box;
+}
+.mainContainer .newPrdAutoControl+div ul li:hover div{
+    display: block;
+}
+.mainContainer .newPrdAutoControl+div ul li div strong{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+    display: block;
+}
+.mainContainer .newPrdAutoControl+div ul li img{
+    width: 100%;
+}
+.mainContainer .newPrdAutoControl+div ul li div a:not(:last-of-type){
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;  
+    display: inline-block;
+    width: 18px;
+}
+.mainContainer .newPrdAutoControl+div ul li div a:first-of-type{
+    background-image: url('../images/ico_s_wish_off.png'); 
+}
+.mainContainer .newPrdAutoControl+div ul li div a:nth-of-type(2){
+    background-image: url('../images/ico_s_cart.png');
+    margin-left: 20px;
+}
+.mainContainer .newPrdAutoControl+div ul li div a:last-of-type{
+    display: block;
+    width: 160px;
+    line-height: 50px;
+    margin: 30px auto 0;
+    background-color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s;
+}
+.mainContainer .newPrdAutoControl+div ul li div a:last-of-type:hover{
+    background-color: #fff;
+    color: #666;
+}
+.mainContainer .newPrdAutoControl+div ul li b{
+    font-size: 24px;
+    font-weight: 600;
+    color: #666;
+    display: block;
+    margin-bottom: 25px; 
+    z-index: 1;
+    position: relative;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+.mainContainer .newPrdAutoControl+div ul li span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+    line-height: 24px;
+    display: block;
+    padding: 0 10%;
+    position: relative;
+    z-index: 1;
+}
+/* product acc */
+
+.mainContainer .newPrdAutoControl+div+div{
+    background: url('../images/bg_about.png') center / cover no-repeat;
+    padding: 17% 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.mainContainer .newPrdAutoControl+div+div h3{
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+}
+.mainContainer .newPrdAutoControl+div+div h3 small{
+    font-size: 20px;
+    font-weight: 700;
+    color: #ccc;
+    display: block;
+    margin-bottom: 40px;
+}
+.mainContainer .newPrdAutoControl+div+div p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #ccc;
+    margin: 30px 0 60px;
+}
+.mainContainer .newPrdAutoControl+div+div a{
+    display: block;
+    width: 130px;
+    line-height: 130px;
+    border: 1px solid #fff;
+    border-radius: 65px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s;
+}
+.mainContainer .newPrdAutoControl+div+div a:hover{
+    background-color: #fff;
+    color: #666;
+}

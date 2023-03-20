@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Roboto:wght@300;400;700&display=swap');
+/* todo. webfontCDN 전체다 걸기 */
+
+
+@import url('reset.css');
+@import url('jquery.bxslider.css');
+/* todo. bxslider localFile걸기 */
+@import url('global.css');
+@import url('page.css');
+@import url('custom.bxSlider.css');

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>KARE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/asideFixed.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+
+    <a href="#" class="btn_top">top</a>
+    <!-- ? top button -->
+
+    <div id="searchPopup">
+        <div>
+            <form>
+                <span>
+                    <input type="search" id="searchField" placeholder="Search..." title="insert to ur search Keywords">
+                    <input type="submit" value="search">
+                </span>
+            </form>
+            <input type="button" value="close" class="closeBtn">
+        </div>
+    </div>
+    <!-- ? search Area -->
+
+    <header>
+        <div>
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo_header.png" alt="KARE">
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    <input type="button" value="search" data-popup="searchPopup">
+                </li>
+                <li>
+                    <a href="userInfo.html">my page</a>
+                </li>
+                <li>
+                    <a href="cart.html">cart</a>
+                </li>
+                <li>
+                    <a href="wish.html">wish</a>
+                </li>
+                <li>
+                    <input type="button" value="gnbToggle" data-panel="gnbPanel">
+                </li>
+            </ul>
+        </div>
+
+        <nav id="gnbPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li>
+                    <a href="aboutUs.html">About us</a>
+                </li>
+                <li>
+                    <b>Furniture</b>
+                    <ol>
+                        <li><a href="list_sofa01.html">Sofa</a></li>
+                        <li><a href="list_armchair01.html">Armchair</a></li>
+                        <li><a href="list_chest01.html">Chest</a></li>
+                        <li><a href="list_table01.html">Table</a></li>
+                        <li><a href="list_chair01.html">Chair</a></li>
+                        <li><a href="list_mirror01.html">Mirror</a></li>
+                        <li><a href="list_cabinet01.html">Cabinet</a></li>
+                        <li><a href="list_shelf01.html">Shelf</a></li>
+                        <li><a href="list_storage01.html">Living storage</a></li>
+                        <li><a href="list_stool01.html">Stool</a></li>
+                        <li><a href="list_lamp01.html">Lamp</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <b>ACC</b>
+                    <ol>
+                        <li><a href="list_painting01.html">Painting</a></li>
+                        <li><a href="list_figure01.html">Figures &amp; object</a></li>
+                        <li><a href="list_deco01.html">Deco plate</a></li>
+                        <li><a href="list_plant01.html">Artificial plant</a></li>
+                        <li><a href="list_watch01.html">Watch</a></li>
+                        <li><a href="list_light01.html">Lantern &amp; Tea light</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="inspiration.html">Inspiration</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- ? FNB -->
+    </header>
+    <!-- ? header -->
+
+    <div class="detailContainer">
+        <div>
+            <ol>
+                <li><img src="images/painting_prod02_01.png" alt="frontShot"></li>
+                <li><img src="images/painting_prod02_02.png" alt="leftShot"></li>
+                <li><img src="images/painting_prod02_03.png" alt="rightShot"></li>
+            </ol>
+            <aside>
+                <div>
+                    <div id="noticePopup">
+                        <input type="button" value="close" class="closeBtn">
+                        <h4>Notice</h4>
+                        <p>
+                            - Product color may vary depending on the type and brightness of each monitor and lighting.<br>
+                            <br>
+                            - In the case of solid wood furniture, cracks or widening may occur due to the temperature and humidity of the space due to its characteristics.<br>
+                            <br>            
+                            - Air bubbles, residues, and cracks in wooden products during use are not grounds for return or refund.<br>
+                            <br>                
+                            - When purchasing, be sure to check the shipping information, exchange, and return information.<br>
+                            <br>                
+                            - All products may be damaged, so please be careful of impact.<br>
+                            <br>                
+                            - Use of each product for purposes other than those specified is prohibited.
+                        </p>
+                    </div>
+                    <div id="shopInfoPopup">
+                        <input type="button" value="close" class="closeBtn">
+                        <h4>Shipping information</h4>
+                        <p>
+                            - After payment is confirmed, you will receive a phone call to inform you of the designated delivery date. (We will not contact you separately for delivery)<br>
+                            <br>
+                            - Delivery after payment usually takes 7-10 days in Seoul and Gyeonggi-do, and about 15 days in other areas. (Excluding holidays and other holidays)<br>
+                            <br>
+                            - Additional shipping costs may occur depending on the shipping standard and destination of the head office, which will be paid in advance.<br>
+                            <br>
+                            - Information necessary for delivery, such as use of a ladder truck, elevator fee, removal of existing furniture, etc., must be provided at least 3 days prior to the designated delivery date.<br>
+                            <br>
+                            - The customer is responsible for any additional costs incurred due to the use of a ladder car, elevator usage fees, or removal of existing furniture.<br>
+                            <br>
+                            - Please understand that delivery may be difficult in areas where delivery is difficult.
+                        </p>
+                    </div>
+                    <div id="exchangePopup">
+                        <input type="button" value="close" class="closeBtn">
+                        <h4>Exchange &amp; Refund</h4>
+                        <p>
+                            - For exchange or refund, please use the bulletin board or customer center (02-545-9871) within 24 hours of receipt.<br>
+                            <br>
+                            - If the delivered product is defective or damaged, 100% exchange or refund is possible.<br>
+                            <br>
+                            - In case of return due to reasons attributable to the consumer or simple change of mind, a penalty and shipping fee will be charged.<br>
+                            <br>
+                            - In case of exchange or return due to change of mind after delivery, the condition at the time of delivery must be maintained.<br>
+                            <br>
+                            - After receiving the product, if the product is damaged or the packaging box is lost due to the consumer's fault, exchange, return, or refund is not possible.<br>
+                            <br>
+                            - Products that are difficult to resell because their value as a product has decreased due to consumer use cannot be exchanged, returned or refunded.<br>
+                            <br>
+                            - Due to the nature of assembly and installation products, exchanges and returns are not allowed after installation is complete.
+                        </p>
+                    </div>
+                    <h2>Glass Picture Flying Astronaut</h2>
+                    <p>Glass picture that wittily expresses various planets and astronauts</p>
+                    <ul>
+                        <li>
+                            <span>Code</span>
+                            <span>53809</span>
+                        </li>
+                        <li>
+                            <span>Condition</span>
+                            <span>New Product</span>
+                        </li>
+                        <li>
+                            <span>Manufacturer</span>
+                            <span>GermanyKARE</span>
+                        </li>
+                        <li>
+                            <span>Origin</span>
+                            <span>OEM China (Designed in Germany)</span>
+                        </li>
+                        <li>
+                            <span>Standard</span>
+                            <span>150 x 100 x 0.4 cm (H/W/D)</span>
+                        </li>
+                        <li>
+                            <span>Weight</span>
+                            <span>14.8 kg</span>
+                        </li>
+                        <li>
+                            <span>Material</span>
+                            <span>Picture: 4 mm Glass Toughened safety glass Laminated, Polypropylene, For wall fixing Horizontal</span>
+                        </li>
+                        <li>
+                            <span>Shipping method</span>
+                            <span>Freight delivery, direct delivery</span>
+                        </li>
+                        <li>
+                            <span>Delivery area</span>
+                            <span>Local delivery (direct, freight) incurs additional costs</span>
+                        </li>
+                    </ul>
+                </div>
+                <b>KRW 600,000</b>                              
+                <a href="order.html">Buy Now</a>
+                <a href="cart.html">+ Shopping Bag</a>
+                <div>
+                    <input type="button" value="Notice" data-popup="noticePopup">
+                    <input type="button" value="Shipping information" data-popup="shopInfoPopup">
+                    <input type="button" value="Exchange & Refund" data-popup="exchangePopup">
+                </div>
+            </aside>
+        </div>
+        <div>
+            <h3>Related products</h3>
+            <ul>
+                <li>
+                    <img src="images/painting_prod01.png" alt="Framed Picture Flowery Meadow">
+                    <b>Framed Picture Flowery Meadow</b>
+                    <span>Framed Picture Flowery Meadow</span>
+                    <div>
+                        <strong>KRW 320,000</strong>
+                        <span>
+                            <a href="wish.html">add to wish</a>
+                            <a href="cart.html">add to cart</a>
+                        </span>
+                        <a href="detail_painting01.html">More View</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/painting_prod02.png" alt="Glass Picture Flying Astronaut">
+                    <b>Glass Picture Flying Astronaut</b>
+                    <span>Glass picture that wittily expresses various planets and astronauts</span>
+                    <div>
+                        <strong>KRW 600,000</strong>
+                        <span>
+                            <a href="wish.html">add to wish</a>
+                            <a href="cart.html">add to cart</a>
+                        </span>
+                        <a href="detail_painting02.html">More View</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/painting_prod03.png" alt="Glass Picture Big Wave">
+                    <b>Glass Picture Big Wave</b>
+                    <span>A glass picture that makes you feel the memories of the sea with the waves crashing coolly</span>
+                    <div>
+                        <strong>KRW 900,000</strong>
+                        <span>
+                            <a href="wish.html">add to wish</a>
+                            <a href="cart.html">add to cart</a>
+                        </span>
+                        <a href="detail_painting03.html">More View</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/painting_prod04.png" alt="Glass Picture Space Galaxy">
+                    <b>Glass Picture Space Galaxy</b>
+                    <span>A colorful glass picture with the motif of a colorful universe with many galaxies</span>
+                    <div>
+                        <strong>KRW 630,000</strong>
+                        <span>
+                            <a href="wish.html">add to wish</a>
+                            <a href="cart.html">add to cart</a>
+                        </span>
+                        <a href="detail_painting04.html">More View</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/painting_prod05.png" alt="Framed Picture Modern Architecture">
+                    <b>Framed Picture Modern Architecture</b>
+                    <span>Modern and stylish painting</span>
+                    <div>
+                        <strong>KRW 650,000</strong>
+                        <span>
+                            <a href="wish.html">add to wish</a>
+                            <a href="cart.html">add to cart</a>
+                        </span>
+                        <a href="detail_painting05.html">More View</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <div>
+            <h2>
+                <span>KARE</span>
+                Copyright ⓒ kare-korea.com<br>All right reserved.
+            </h2>
+
+            <div>
+                <a href="information.html">Information use</a>
+                <a href="termsOfService.html">Terms of service</a>
+                <a href="privacyPolicy.html">Privacy policy</a>
+                <span><a href="tel:+827041229874">070-4122-9874</a> / Weekdays am 10:00 ~ pm 7:00 / Saturday am 10:00 ~ pm 6:00 / Lunch time pm 12:00 ~ pm 1:00 / Please inquire on the bulletin board on Saturdays and holidays.</span>
+            </div>
+
+            <span>
+                <a href="https://www.instagram.com/kare_design">instagram</a>
+                <a href="https://www.youtube.com/channel/UCByQXn1GnCleEVUwR7EBBBg">youtube</a>
+            </span>
+        </div>
+    </footer>
+    <!-- ? footer -->
+</body>
+</html>

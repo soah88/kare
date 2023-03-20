@@ -1,0 +1,140 @@
+.bx-wrapper{
+    border-width: 0;
+    box-shadow: none;
+    position: relative;
+    margin: 0;
+}
+.mainContainer .bx-wrapper .bx-controls-direction a{
+    font-weight: 600;
+    text-indent: 0;
+    color: #fff;
+    width: auto;
+    height: auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+    z-index: 0;
+}
+.mainContainer .bx-wrapper li{
+    height: 100%;
+}
+.bx-wrapper .bx-next{
+    right: 2.6%;
+    background-image: none;
+}
+.bx-wrapper .bx-prev{
+    left: 2.6%;
+    background-image: none;
+}
+.newPrdSlider .bx-controls{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bx-wrapper .bx-pager{
+    position: absolute;
+    bottom: 12%;
+    /* right: 13%; */
+    left: 10%;
+    width: auto;
+    color: #fff;
+    padding: 0;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background: rgba(255,255,255,0.5);
+    margin: 0;
+}
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-pager.bx-default-pager a,
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-pager.bx-default-pager a:hover{
+    background: none;
+    text-indent: 0px;
+    color: #fff;
+    font-size: 12px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover{
+    background: #fff;
+}
+.mainContainer > :not(div:nth-of-type(2)) .bx-wrapper .bx-pager-item:not(:first-of-type) a{
+    margin-left: 25px;
+}
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-pager-item{
+    font-size: 12px;
+    line-height: 1;
+}
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-pager-item:nth-of-type(2){
+    position: relative;
+    padding-left: 150px;
+}
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-pager-item:nth-of-type(2)::before{
+    content: '';
+    display: block;
+    width: 110px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 4px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: #fff;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+    background: url('../images/controls2.png') -85px -11px no-repeat;
+    margin: 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+    background: url('../images/controls2.png') -85px -44px no-repeat;
+    margin: 0;
+}
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{
+    width: auto;
+}
+.mainContainer > div:nth-of-type(3) .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager,
+.mainContainer > div:nth-of-type(4) .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{
+    position: static;
+    width: auto;
+}
+.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item{
+    vertical-align: middle;
+}
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item{
+    vertical-align: bottom;
+    margin: 0;
+}
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item:not(:first-child){
+    margin-left: 25px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover, 
+.bx-wrapper .bx-controls-auto .bx-stop.active, 
+.bx-wrapper .bx-controls-auto .bx-stop:focus{
+    background-position: -85px -33px;
+}
+.mainContainer > div:nth-of-type(3) .bx-wrapper .bx-controls,
+.mainContainer > div:nth-of-type(4) .bx-wrapper .bx-controls{
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+.mainContainer > div:nth-of-type(2) .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{
+    width: 45px;
+    left: 10%;
+    bottom: 12%;
+    padding-left: 195px;
+}
+.mainContainer > div:nth-of-type(3) .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto,
+.mainContainer > div:nth-of-type(4) .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{
+    position: static;
+    width: 10px;
+    margin-left: 30px;
+}
+
+.mainContainer > div:nth-of-type(3) .bx-wrapper .bx-controls,
+.mainContainer > div:nth-of-type(4) .bx-wrapper .bx-controls{
+    left: auto;
+    right: 10%;
+}
+.mainContainer div.headCopyPager{
+    left: 10%;
+    bottom: 12%;
+}
